@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +10,21 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('Home/home');
+// });
+
+Route::get('/','HomeViewController@index');
+Route::get('/createContent','ContentViewController@create');
+Route::post('/createContentComplete','ContentViewController@store');
+
 Route::get('/', function () {
-    return view('welcome');
+
+    // Alert::success('Success Title', 'Success Message');
+    return view('home.Home'); 
 });
+
+
+
+
+
