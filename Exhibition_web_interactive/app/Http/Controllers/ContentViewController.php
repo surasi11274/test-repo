@@ -48,7 +48,7 @@ class ContentViewController extends Controller
         ]);
 
 
-        //         get file extension
+        // get file extension
         $filenameWithExt = $request->file('image')->getClientOriginalName();
         // file name 1.jpg
         // get file name ex =1
